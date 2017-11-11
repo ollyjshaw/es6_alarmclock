@@ -1,4 +1,8 @@
 {
+  "name": "alarm_clock",
+  "description": "Will tick every second, beep every hour",
+  "repository": "ollyjshaw/es6_alarmclock.git",
+  "license": "BSD-3-Clause",
   "scripts": {
     "test": "jest"
   },
