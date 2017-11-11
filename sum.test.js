@@ -16,3 +16,9 @@ test('clock beeps when every hour', () => {
   const noise = clock.readTime("02:00")
   expect(noise).toBe('beep')
 })
+
+test('clock wakes us up at 7', () => {
+  const clock = new AlarmClock()
+  const noise = clock.readTime("07:00")
+  expect(noise).toBe('wake up!')
+})
