@@ -8,7 +8,7 @@ class AlarmClock {
       return {hours: hours, mins: mins}
     }
 
-    const {hours: hours, mins: mins} = destruct(timeIn);
+    const {hours: hours, mins: mins} = destruct(timeIn)
     if (hours === 7 && mins === 0) {
       return 'wake up!'
     } else if (mins === 0) {
@@ -19,4 +19,4 @@ class AlarmClock {
   }
 }
 
-module.exports = AlarmClock;
+module.exports = AlarmClock
