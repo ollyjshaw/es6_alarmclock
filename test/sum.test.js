@@ -1,8 +1,14 @@
-const sum = require('./sum')
-const AlarmClock = require('./AlarmClock')
+const sum = require('../src/sum')
+const AlarmClock = require('../src/AlarmClock')
+const Handler = require('../src/Handler')
 
 test('test 1+2 = 3', () => {
   expect(sum(1, 2)).toBe(3)
+})
+
+test('clock fails with undefined', () => {
+  const clock = new AlarmClock()
+  expect( () => {clock.readTime(undefined)}).toThrow('No time provided in json')
 })
 
 test('clock ticks when every second', () => {
