@@ -1,6 +1,6 @@
 const AlarmClock = require('./AlarmClock')
 
-exports.myHandler = function(event, context, callback) {
+function myHandler (event, context, callback) {
 
   console.log('I got called')
   console.log('value1 =', event.time)
@@ -8,3 +8,5 @@ exports.myHandler = function(event, context, callback) {
   const noise = clock.readTime(event.time)
   callback(null, noise)
 }
+
+module.exports = myHandler
