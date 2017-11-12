@@ -1,6 +1,10 @@
+const required = () => {
+  throw new Error('No time provided in json')
+}
+
 class AlarmClock {
 
-  readTime(timeIn) {
+  readTime(timeIn = required()) {
 
     const {hours, mins} = destruct(timeIn)
     if (hours === 7 && mins === 0) {
