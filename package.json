@@ -6,6 +6,16 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  },
   "devDependencies": {
     "jest": "^21.2.1",
     "eslint": "^4.11.0"

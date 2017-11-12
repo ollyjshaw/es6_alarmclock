@@ -1,6 +1,5 @@
-const sum = require('../src/sum')
-const AlarmClock = require('../src/AlarmClock')
-const Handler = require('../src/Handler')
+const sum = require('../sum')
+const AlarmClock = require('../AlarmClock')
 
 test('test 1+2 = 3', () => {
   expect(sum(1, 2)).toBe(3)

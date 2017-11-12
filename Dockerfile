@@ -5,7 +5,8 @@ RUN npm -v
 ADD package.json /home/node/app/
 RUN npm install --production
 ADD *.js /home/node/app/
+ADD ./test/*.js /home/node/app/test/
 ADD *.json /home/node/app/
 WORKDIR /home/node/app
-CMD ["npm", "test"]
+CMD ["jest", "--coverage", "--no-cache"]
 
