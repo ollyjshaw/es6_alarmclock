@@ -17,7 +17,7 @@ phases:
       - echo running tests
       - npm test
       - echo running lint
-      - npm eslint
+      - eslint
   post_build:
     commands:
       - echo build completed
