@@ -1,4 +1,4 @@
-const AlarmClock = require('./AlarmClock')
+const AlarmClock = require('./alarm_clock')
 
 function myHandler (event, context, callback) {
 
